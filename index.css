@@ -1,8 +1,59 @@
 body {
     margin: 0;
+    background-color: rgb(27,36,74);
+    
 }
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
 
 .container {
     display: flex;
     justify-content: space-around;
+}
+
+.team-scoreboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    color: #F94F6D;
+    font-size: 66px;
+    margin: 0px;
+}
+
+.light-blue button{
+    color: #9AABD8;
+    background-color: rgb(27,36,74);
+    border: 1px solid #9AABD8;
+}
+
+.black-background{
+    background-color: #080001;
+    width:100px;
+    height:80px;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;;
+}
+
+.lakers-logo-img{
+    width: 300px;
+}
+
+.white{
+color: #EEEEEE;
 }
