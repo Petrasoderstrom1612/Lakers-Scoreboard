@@ -32,12 +32,18 @@ body {
     color: #9AABD8;
     background-color: rgb(27,36,74);
     border: 1px solid #9AABD8;
+    padding: 10px;
+}
+
+.light-blue button:hover{
+
+    border: 5px solid #F94F6D;
 }
 
 .black-background{
     background-color: #080001;
-    width:100px;
-    height:80px;
+    width:120px;
+    height:85px;
     margin-bottom:20px;
     display: flex;
     justify-content: center;
@@ -56,4 +62,8 @@ body {
 
 .white{
 color: #EEEEEE;
+}
+
+.timer{
+    text-align: center;
 }
