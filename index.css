@@ -1,22 +1,21 @@
 body {
     margin: 0;
     background-color: rgb(27,36,74);
+    font-family: "Roboto", sans-serif; /* It is in the body where you decide the major font for the project. Note! Buttons often do not react on body, you need to target them by class  */
+    font-weight: 900;
+    font-style: normal;
     
 }
 
-.roboto-light {
+/* additional families for other components that you target by class*/
+.roboto-light { 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
 
-  .orbitron {
+.orbitron {
     font-family: 'Orbitron', sans-serif;
     font-weight: 700; /* Optional: set the font weight you prefer */
 }
@@ -83,4 +82,8 @@ color: #EEEEEE;
 
 .timer{
     text-align: center;
+}
+
+.time{
+    font-size: 0.9em;
 }
