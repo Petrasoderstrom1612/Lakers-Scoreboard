@@ -10,6 +10,11 @@ body {
     font-style: normal;
   }
 
+h3 {
+    font-size: 2em;
+    margin-bottom: 6px;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -38,6 +43,7 @@ body {
 .light-blue button:hover{
 
     border: 5px solid #F94F6D;
+    padding:5px;
 }
 
 .black-background{
