@@ -23,12 +23,12 @@
         <div class="team-scoreboard">
             <h3 class="white">HOME</h3>
             <div class="black-background">
-                <h2 id="home-score-el" class="red">0</h2>
+                <h2 id="home-score-el" class="red ">0</h2>
             </div>
             <div class="light-blue">
-                <button onClick="add1pointToLakers()">+1</button>
-                <button onClick="add2pointToLakers()">+2</button>
-                <button onClick="add3pointToLakers()">+3</button>
+                <button class="orbitron" onClick="add1pointToLakers()">+1</button>
+                <button class="orbitron" onClick="add2pointToLakers()">+2</button>
+                <button class="orbitron" onClick="add3pointToLakers()">+3</button>
             </div>
         </div>
         <div class="team-scoreboard">
@@ -37,17 +37,17 @@
                 <h2 id="guest-score-el" class="red">0</h2>
             </div>
             <div class="light-blue">
-                <button onClick="add1pointToGuest()">+1</button>
-                <button onClick="add2pointToGuest()">+2</button>
-                <button onClick="add3pointToGuest()">+3</button>
+                <button class="orbitron" onClick="add1pointToGuest()">+1</button>
+                <button class="orbitron" onClick="add2pointToGuest()">+2</button>
+                <button class="orbitron" onClick="add3pointToGuest()">+3</button>
             </div>
         </div>
     </div>
     <div class="timer">
         <h3  class="white">Time: <span id="countdown">12:00</span></h3>
         <div class="light-blue">
-        <button class="light-blue" onclick="startTimer()">Start Timer</button>
-        <button class="light-blue" onclick="stopTimer()">Stop Timer</button>
+        <button class="light-blue orbitron" onclick="startTimer()">Start time</button>
+        <button class="light-blue orbitron" onclick="stopTimer()"> Pause </button>
     </div>
     </div>
     </div>

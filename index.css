@@ -4,11 +4,22 @@ body {
     
 }
 
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
   }
+
+  .orbitron {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700; /* Optional: set the font weight you prefer */
+}
 
 h3 {
     font-size: 2em;

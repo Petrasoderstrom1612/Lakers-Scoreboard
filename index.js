@@ -50,7 +50,7 @@ function startTimer() {
     // If time reaches 0, stop the timer
     if (timeInSeconds <= 0) {
       clearInterval(timer);
-      countdownElement.textContent = 'Time\'s up!';
+      countdownElement.textContent = 'Time: 00:00';
       // You can add further actions here when the timer reaches 0
     }
   }, 1000); // Interval set to 1000ms (1 second)
