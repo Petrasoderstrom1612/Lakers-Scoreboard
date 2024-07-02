@@ -16,7 +16,7 @@
         <img class="lakers-logo-img" src="./Los_Angeles_Lakers_logo.svg.png" alt="Lakers logo" />
     </div>
     <div class="container">
-        <div class="team-scoreboard">
+        <div class="team-scoreboard scoreboard-1">
             <h3 class="white orbitron">HOME</h3>
             <div class="black-background">
                 <h2 id="home-score-el" class="red ">0</h2>
@@ -26,8 +26,9 @@
                 <button class="orbitron" onClick="add2pointToLakers()">+2</button>
                 <button class="orbitron" onClick="add3pointToLakers()">+3</button>
             </div>
+            <img class="return-icon-1" alt="return icon" src="./return-icon.svg" onClick="annulateBoard1()"/>
         </div>
-        <div class="team-scoreboard">
+        <div class="team-scoreboard scoreboard-2">
             <h3 class="white orbitron">GUEST</h3>
             <div class="black-background">
                 <h2 id="guest-score-el" class="red">0</h2>
@@ -37,8 +38,10 @@
                 <button class="orbitron" onClick="add2pointToGuest()">+2</button>
                 <button class="orbitron" onClick="add3pointToGuest()">+3</button>
             </div>
+            <img class="return-icon-2" alt="return icon" src="./return-icon.svg" onClick="annulateBoard2()"/>
         </div>
     </div>
+    <!-- <img alt="return icon" src="./return-icon.svg"/> -->
     <div class="timer">
         <h3  class="white "><span class="time orbitron">Time: </span><span id="countdown">12:00</span></h3>
         <div class="light-blue">

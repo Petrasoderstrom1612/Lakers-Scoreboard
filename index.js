@@ -37,21 +37,21 @@ function add3pointToGuest() {
 }
 
 //TIMER
-let timer; // Variable to hold the timer interval
+let timer;
 let timeInSeconds = 720; // 12 minutes in seconds
 const countdownElement = document.getElementById('countdown');
 
 function startTimer() {
   // Update the timer display every second
   timer = setInterval(() => {
-    timeInSeconds--; // Decrease the time by 1 second
+    timeInSeconds--; 
     countdownElement.textContent = formatTime(timeInSeconds); // Update the countdown display
 
-    // If time reaches 0, stop the timer
+    
     if (timeInSeconds <= 0) {
       clearInterval(timer);
       countdownElement.textContent = 'Time: 00:00';
-      // You can add further actions here when the timer reaches 0
+      
     }
   }, 1000); // Interval set to 1000ms (1 second)
 }
@@ -64,4 +64,14 @@ function formatTime(seconds) {
   let minutes = Math.floor(seconds / 60);
   let remainingSeconds = seconds % 60;
   return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+}
+
+function annulateBoard1() {
+  homeScore = 0
+  homeScoreEl.innerHTML = homeScore
+}
+
+function annulateBoard2() {
+  guestScore = 0
+  guestScoreEl.innerHTML = guestScore
 }

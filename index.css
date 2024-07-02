@@ -87,3 +87,42 @@ color: #EEEEEE;
 .time{
     font-size: 0.9em;
 }
+
+/* RESET 1 */
+.scoreboard-1{
+    position: relative;
+}
+
+.return-icon-1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -27px;
+    top: 193px;
+}
+
+.return-icon-1:hover{
+    border: 1px solid #F94F6D;
+    cursor: pointer;
+    padding:3px
+}
+
+/* RESET 2 */
+.scoreboard-2{
+    position: relative;
+}
+
+.return-icon-2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -27px;
+    top: 193px;
+}
+
+.return-icon-2:hover{
+
+    border: 1px solid #F94F6D;
+    cursor: pointer;
+    padding:3px
+}
