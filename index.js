@@ -16,8 +16,13 @@ function add2pointToLakers() {
 }
 
 function add3pointToLakers() {
-    homeScore += 3
-    homeScoreEl.innerHTML = homeScore
+  homeScore += 3
+  homeScoreEl.innerHTML = homeScore
+}
+
+function annulateBoard1() {
+  homeScore = 0
+  homeScoreEl.innerHTML = homeScore
 }
 
 //GUEST BOARD
@@ -34,6 +39,11 @@ function add2pointToGuest() {
 function add3pointToGuest() {
     guestScore += 3
     guestScoreEl.innerHTML = guestScore
+}
+
+function annulateBoard2() {
+  guestScore = 0
+  guestScoreEl.innerHTML = guestScore
 }
 
 //TIMER
@@ -56,8 +66,8 @@ function startTimer() {
   }, 1000); // Interval set to 1000ms (1 second)
 }
 
-function stopTimer() {
-  clearInterval(timer); // Clear the interval to stop the timer
+function pauseTimer() {
+  clearInterval(timer); 
 }
 
 function formatTime(seconds) {
@@ -66,12 +76,9 @@ function formatTime(seconds) {
   return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
 }
 
-function annulateBoard1() {
-  homeScore = 0
-  homeScoreEl.innerHTML = homeScore
+function annulateTimer() {
+  timeInSeconds = 720;
+  clearInterval(timer); 
+  countdownElement.textContent = '12:00';
 }
 
-function annulateBoard2() {
-  guestScore = 0
-  guestScoreEl.innerHTML = guestScore
-}
