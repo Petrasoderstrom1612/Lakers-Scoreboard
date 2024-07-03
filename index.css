@@ -81,6 +81,7 @@ color: #EEEEEE;
 }
 
 .timer{
+    position: relative;
     text-align: center;
 }
 
@@ -88,7 +89,7 @@ color: #EEEEEE;
     font-size: 0.9em;
 }
 
-/* RESET 1 */
+/* RESET SCOREBOARD 1 */
 .scoreboard-1{
     position: relative;
 }
@@ -107,7 +108,7 @@ color: #EEEEEE;
     padding:3px
 }
 
-/* RESET 2 */
+/* RESET SCOREBOARD 2 */
 .scoreboard-2{
     position: relative;
 }
@@ -121,6 +122,27 @@ color: #EEEEEE;
 }
 
 .return-icon-2:hover{
+    border: 1px solid #F94F6D;
+    cursor: pointer;
+    padding:3px
+}
+
+/* TIMER RESET */
+
+.timer-section{
+    display: flex;
+    justify-content: center;
+}
+
+.timer-annuler{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -28px;
+    top: 86px;
+}
+
+.timer-annuler:hover{
     border: 1px solid #F94F6D;
     cursor: pointer;
     padding:3px
