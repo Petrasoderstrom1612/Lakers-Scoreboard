@@ -28,6 +28,7 @@ h3 {
 .container {
     display: flex;
     justify-content: space-around;
+    margin: 0 20px;
 }
 
 .team-scoreboard{
@@ -146,4 +147,12 @@ color: #EEEEEE;
     border: 1px solid #F94F6D;
     cursor: pointer;
     padding:3px
+}
+
+.all-annuler{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right:20px;
 }
