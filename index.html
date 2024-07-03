@@ -12,45 +12,47 @@
 </head>
 
 <body class="roboto-regular">
-    <div class="img-container">
-        <img class="lakers-logo-img" src="./Los_Angeles_Lakers_logo.svg.png" alt="Lakers logo" />
-    </div>
-    <div class="container">
-        <div class="team-scoreboard scoreboard-1">
-            <h3 class="white orbitron">HOME</h3>
-            <div class="black-background">
-                <h2 id="home-score-el" class="red ">0</h2>
-            </div>
-            <div class="light-blue">
-                <button class="orbitron" onClick="add1pointToLakers()">+1</button>
-                <button class="orbitron" onClick="add2pointToLakers()">+2</button>
-                <button class="orbitron" onClick="add3pointToLakers()">+3</button>
-            </div>
-            <img class="return-icon-1" alt="return icon" src="./return-icon.svg" onClick="annulateBoard1()"/>
+    <div>
+        <div class="img-container">
+            <img class="lakers-logo-img" src="./Los_Angeles_Lakers_logo.svg.png" alt="Lakers logo" />
         </div>
-        <div class="team-scoreboard scoreboard-2">
-            <h3 class="white orbitron">GUEST</h3>
-            <div class="black-background">
-                <h2 id="guest-score-el" class="red">0</h2>
+        <div class="container">
+            <div class="team-scoreboard scoreboard-1">
+                <h3 class="white orbitron">HOME</h3>
+                <div class="black-background">
+                    <h2 id="home-score-el" class="red ">0</h2>
+                </div>
+                <div class="light-blue">
+                    <button class="orbitron" onClick="add1pointToLakers()">+1</button>
+                    <button class="orbitron" onClick="add2pointToLakers()">+2</button>
+                    <button class="orbitron" onClick="add3pointToLakers()">+3</button>
+                </div>
+                <img class="return-icon-1" alt="return icon" src="./return-icon.svg" onClick="annulateBoard1()" />
             </div>
-            <div class="light-blue">
-                <button class="orbitron" onClick="add1pointToGuest()">+1</button>
-                <button class="orbitron" onClick="add2pointToGuest()">+2</button>
-                <button class="orbitron" onClick="add3pointToGuest()">+3</button>
+            <div class="team-scoreboard scoreboard-2">
+                <h3 class="white orbitron">GUEST</h3>
+                <div class="black-background">
+                    <h2 id="guest-score-el" class="red">0</h2>
+                </div>
+                <div class="light-blue">
+                    <button class="orbitron" onClick="add1pointToGuest()">+1</button>
+                    <button class="orbitron" onClick="add2pointToGuest()">+2</button>
+                    <button class="orbitron" onClick="add3pointToGuest()">+3</button>
+                </div>
+                <img class="return-icon-2" alt="return icon" src="./return-icon.svg" onClick="annulateBoard2()" />
             </div>
-            <img class="return-icon-2" alt="return icon" src="./return-icon.svg" onClick="annulateBoard2()"/>
         </div>
-    </div>
-    <div class="timer-section">
-    <div class="timer">
-        <h3  class="white "><span class="time orbitron">Time: </span><span id="countdown">12:00</span></h3>
-        <div class="light-blue">
-            <button class="light-blue orbitron" onclick="startTimer()">Start time</button>
-            <button class="light-blue orbitron" onclick="pauseTimer()"> Pause </button>
+        <div class="timer-section">
+            <div class="timer">
+                <h3 class="white "><span class="time orbitron">Time: </span><span id="countdown">12:00</span></h3>
+                <div class="light-blue">
+                    <button class="light-blue orbitron" onclick="startTimer()">Start time</button>
+                    <button class="light-blue orbitron" onclick="pauseTimer()"> Pause </button>
+                </div>
+                <img class="timer-annuler" alt="return icon" src="./return-icon.svg" onClick="annulateTimer()" />
+            </div>
         </div>
-        <img class="timer-annuler" alt="return icon" src="./return-icon.svg" onClick="annulateTimer()"/>
-    </div>
-    </div>
+        <img class="all-annuler" alt="return icon" src="./return-icon.svg" onClick="annulateAll()" />
     </div>
     <script src="index.js"></script>
 </body>

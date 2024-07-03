@@ -82,3 +82,8 @@ function annulateTimer() {
   countdownElement.textContent = '12:00';
 }
 
+function annulateAll(){
+  annulateBoard1()
+  annulateBoard2()
+  annulateTimer()
+}
