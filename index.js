@@ -48,22 +48,20 @@ function annulateBoard2() {
 
 //TIMER
 let timer;
-let timeInSeconds = 720; // 12 minutes in seconds
-const countdownElement = document.getElementById('countdown');
+let timeInSeconds = 720; // 12 min
+const countdownEl = document.getElementById('countdown-el');
 
 function startTimer() {
-  // Update the timer display every second
-  timer = setInterval(() => {
+  timer = setInterval(() => { // Update the timer display every second
     timeInSeconds--; 
-    countdownElement.textContent = formatTime(timeInSeconds); // Update the countdown display
+    countdownEl.textContent = formatTime(timeInSeconds); // Update the countdown display
 
-    
-    if (timeInSeconds <= 0) {
+    if (timeInSeconds <= 0) { //when time is over
       clearInterval(timer);
-      countdownElement.textContent = 'Time: 00:00';
+      countdownEl.textContent = 'Time: 00:00';
       
     }
-  }, 1000); // Interval set to 1000ms (1 second)
+  }, 1000); // Interval 1s
 }
 
 function pauseTimer() {
@@ -79,7 +77,7 @@ function formatTime(seconds) {
 function annulateTimer() {
   timeInSeconds = 720;
   clearInterval(timer); 
-  countdownElement.textContent = '12:00';
+  countdownEl.textContent = '12:00';
 }
 
 function annulateAll(){
