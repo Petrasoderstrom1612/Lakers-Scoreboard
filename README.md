@@ -1,3 +1,3 @@
 # Lakers-Scoreboard
-Lakers backetball scoreboard for matches
+Lakers basketball scoreboard for matches
 URL: https://lakersscoreboard.netlify.app/
